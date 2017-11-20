@@ -45,16 +45,16 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>51lib</OutputName>
-          <CreateExecutable>0</CreateExecutable>
-          <CreateLib>1</CreateLib>
+          <OutputName>51lib_test</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
-          <DebugInformation>0</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
           <HexFormatSelection>0</HexFormatSelection>
           <Merge32K>0</Merge32K>
-          <CreateBatchFile>1</CreateBatchFile>
+          <CreateBatchFile>0</CreateBatchFile>
           <BeforeCompile>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
@@ -66,9 +66,9 @@
             <nStopU2X>0</nStopU2X>
           </BeforeCompile>
           <BeforeMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>E:\C.Code\git_project\51lib\51lib_build.BAT</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -176,7 +176,7 @@
           </Flash1>
           <bUseTDR>0</bUseTDR>
           <Flash2></Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -311,7 +311,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\inc</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -335,7 +335,7 @@
             <DataOverlaying>1</DataOverlaying>
             <OverlayString></OverlayString>
             <MiscControls></MiscControls>
-            <DisableWarningNumbers></DisableWarningNumbers>
+            <DisableWarningNumbers>16</DisableWarningNumbers>
             <LinkerCmdFile></LinkerCmdFile>
             <Assign></Assign>
             <ReserveString></ReserveString>
@@ -361,7 +361,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group</GroupName>
+          <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
               <FileName>STARTUP.A51</FileName>
@@ -369,49 +369,14 @@
               <FilePath>.\STARTUP.A51</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
+              <FileName>test.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\delay.c</FilePath>
+              <FilePath>.\test.c</FilePath>
             </File>
             <File>
-              <FileName>ExternalInterrupt0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\ExternalInterrupt0.c</FilePath>
-            </File>
-            <File>
-              <FileName>Interrupt.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\Interrupt.c</FilePath>
-            </File>
-            <File>
-              <FileName>Serial.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\Serial.c</FilePath>
-            </File>
-            <File>
-              <FileName>SerialBase.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\SerialBase.c</FilePath>
-            </File>
-            <File>
-              <FileName>T2_Delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\T2_Delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>TimeCounter0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\TimeCounter0.c</FilePath>
-            </File>
-            <File>
-              <FileName>Timer2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\Timer2.c</FilePath>
-            </File>
-            <File>
-              <FileName>Timer2_PWM.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\Timer2_PWM.c</FilePath>
+              <FileName>51lib.LIB</FileName>
+              <FileType>4</FileType>
+              <FilePath>.\Objects\51lib.LIB</FilePath>
             </File>
           </Files>
         </Group>
@@ -419,64 +384,9 @@
           <GroupName>Include Group</GroupName>
           <Files>
             <File>
-              <FileName>delay.h</FileName>
+              <FileName>51lib.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\delay.h</FilePath>
-            </File>
-            <File>
-              <FileName>ExternalInterrupt0.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\ExternalInterrupt0.h</FilePath>
-            </File>
-            <File>
-              <FileName>Global.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Global.h</FilePath>
-            </File>
-            <File>
-              <FileName>Interrupt.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Interrupt.h</FilePath>
-            </File>
-            <File>
-              <FileName>mutex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\mutex.h</FilePath>
-            </File>
-            <File>
-              <FileName>Serial.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Serial.h</FilePath>
-            </File>
-            <File>
-              <FileName>SerialBase.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\SerialBase.h</FilePath>
-            </File>
-            <File>
-              <FileName>T2_delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\T2_delay.h</FilePath>
-            </File>
-            <File>
-              <FileName>TimeCounter0.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\TimeCounter0.h</FilePath>
-            </File>
-            <File>
-              <FileName>Timer.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Timer.h</FilePath>
-            </File>
-            <File>
-              <FileName>Timer2.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Timer2.h</FilePath>
-            </File>
-            <File>
-              <FileName>Timer2_PWM.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\inc\Timer2_PWM.h</FilePath>
+              <FilePath>.\inc\51lib.h</FilePath>
             </File>
           </Files>
         </Group>

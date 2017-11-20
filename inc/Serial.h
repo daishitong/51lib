@@ -9,13 +9,13 @@
 #define ENABLE_SERIAL_INTERRUPT_READ
 //#define ENABLE_SERIAL_INTERRUPT_WRITE
 
-#define SERIAL_BUFFER_SIZE 10
+#define SERIAL_BUFFER_SIZE 15
 #define END_OF_RECEIVE_CHAR ';'
 
 typedef void (*SerialEventHandler)(char* buffer);
 
 void Serial_Init();
-void Serial_ParseMessage(SerialEventHandler parseHandler);
+void Serial_SetParseHandler(SerialEventHandler parseHandler);
 void Serial_WriteMessage(char *str);
 
 #ifdef ENABLE_SERIAL_INTERRUPT_WRITE

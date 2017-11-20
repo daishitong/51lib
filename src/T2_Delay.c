@@ -2,6 +2,7 @@
 
 #include <reg52.h>
 #include "T2_Delay.h"
+#include "Timer.h"
 
 void T2Delay_Init()
 {
@@ -25,10 +26,10 @@ void T2Delay_DelayCount(unsigned short nCount)
 
 void T2Delay_DelayTicks(unsigned short nTicks)
 {
-    T2Delay_DelayCount(T2Deley_Ticks2COUNT(nTicks));
+    T2Delay_DelayCount(TIMER_TICKS2COUNT(nTicks));
 }
 
 void T2Delay_DelayUS(unsigned short us)
 {
-    T2Delay_DelayCount(T2Delay_US2COUNT(us));
+    T2Delay_DelayCount(TIMER_US2COUNT(us));
 }

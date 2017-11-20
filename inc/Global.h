@@ -1,7 +1,7 @@
 /* site:https://github.com/daishitong/51lib */
 
-#ifndef __ACTION_H__
-#define __ACTION_H__
+#ifndef __GLOBAL_H__
+#define __GLOBAL_H__
 
 #ifndef NULL
 #define NULL ((void *)0)

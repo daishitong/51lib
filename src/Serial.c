@@ -22,35 +22,26 @@ void Serial_Init()
 
 #ifdef ENABLE_SERIAL_INTERRUPT_READ
 
-Mutex_Create(mutex_serial_receive);
+SerialEventHandler _parseHandler = NULL;
 char receive_buffer[SERIAL_BUFFER_SIZE];
+
+void Serial_SetParseHandler(SerialEventHandler parseHandler)
+{
+    _parseHandler = parseHandler;
+}
 
 void Serial_ReceiveBufferHandler()
 {
     static char receive_index = 0;
 
-    if(Mutex_IsUsed(mutex_serial_receive))
-        return;
-
     if(((receive_buffer[receive_index++] = GET_SERIAL_DATA()) == END_OF_RECEIVE_CHAR) || receive_index == SERIAL_BUFFER_SIZE)
     {
-        Mutex_Enter(mutex_serial_receive);
-
         receive_index = 0;
-    }
-}
-
-void Serial_ParseMessage(SerialEventHandler parseHandler)
-{
-    if(Mutex_IsUsed(mutex_serial_receive))
-    {
-        if(parseHandler != NULL)
+        if(_parseHandler != NULL)
         {
-            parseHandler(receive_buffer);
+            _parseHandler(receive_buffer);
         }
-        
-        Mutex_Exit(mutex_serial_receive);
-    }   
+    }
 }
 #endif
 
@@ -104,13 +95,13 @@ void Serial_Printf(const char *fmt, ...)
 #endif
 
 #if (defined ENABLE_SERIAL_INTERRUPT_READ) || (defined ENABLE_SERIAL_INTERRUPT_WRITE)
-void Interrupt_Handler(SIO_VECTOR)
+void Interrupt_Handler(SIO_VECTOR) using 3
 {
     #ifdef ENABLE_SERIAL_INTERRUPT_READ
     if(RI == 1)
     {
-        Serial_ReceiveBufferHandler();
         RI = 0;
+        Serial_ReceiveBufferHandler();
     }
     #endif
 

@@ -7,7 +7,7 @@ sbit ExternalInterrupt0_Pin = P3^2;
 
 void ExternalInterrupt0_Init()
 {
-    IT0 = 1;    // 0:low level active��1��falling edge active
+    IT0 = 1;    // 0:low level active 1:falling edge active
     IE0 = 0;	// Interrupt 0 Edge Flag.
     ExternalInterrupt0_Pin = 1;
 }
