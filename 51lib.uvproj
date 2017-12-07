@@ -311,7 +311,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\core\inc</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -361,7 +361,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group</GroupName>
+          <GroupName>Core</GroupName>
           <Files>
             <File>
               <FileName>STARTUP.A51</FileName>
@@ -371,132 +371,207 @@
             <File>
               <FileName>Calculation.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\Calculation.c</FilePath>
+              <FilePath>.\core\Calculation.c</FilePath>
             </File>
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\delay.c</FilePath>
+              <FilePath>.\core\delay.c</FilePath>
             </File>
             <File>
               <FileName>delay_nop.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\delay_nop.c</FilePath>
+              <FilePath>.\core\delay_nop.c</FilePath>
             </File>
             <File>
               <FileName>ExternalInterrupt0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\ExternalInterrupt0.c</FilePath>
+              <FilePath>.\core\ExternalInterrupt0.c</FilePath>
             </File>
             <File>
               <FileName>Interrupt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\Interrupt.c</FilePath>
+              <FilePath>.\core\Interrupt.c</FilePath>
             </File>
             <File>
               <FileName>Serial.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\Serial.c</FilePath>
+              <FilePath>.\core\Serial.c</FilePath>
             </File>
             <File>
               <FileName>SerialBase.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\SerialBase.c</FilePath>
+              <FilePath>.\core\SerialBase.c</FilePath>
             </File>
             <File>
               <FileName>T2_Delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\T2_Delay.c</FilePath>
+              <FilePath>.\core\T2_Delay.c</FilePath>
             </File>
             <File>
               <FileName>TimeCounter0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\TimeCounter0.c</FilePath>
+              <FilePath>.\core\TimeCounter0.c</FilePath>
             </File>
             <File>
               <FileName>Timer2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\Timer2.c</FilePath>
+              <FilePath>.\core\Timer2.c</FilePath>
             </File>
             <File>
               <FileName>Timer2_PWM.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\core\src\Timer2_PWM.c</FilePath>
+              <FilePath>.\core\Timer2_PWM.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Include Group</GroupName>
+          <GroupName>Header files</GroupName>
           <Files>
             <File>
               <FileName>Calculation.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Calculation.h</FilePath>
+              <FilePath>.\core\Calculation.h</FilePath>
             </File>
             <File>
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\delay.h</FilePath>
+              <FilePath>.\core\delay.h</FilePath>
             </File>
             <File>
               <FileName>delay_nop.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\delay_nop.h</FilePath>
+              <FilePath>.\core\delay_nop.h</FilePath>
             </File>
             <File>
               <FileName>ExternalInterrupt0.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\ExternalInterrupt0.h</FilePath>
+              <FilePath>.\core\ExternalInterrupt0.h</FilePath>
             </File>
             <File>
               <FileName>Global.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Global.h</FilePath>
+              <FilePath>.\core\Global.h</FilePath>
             </File>
             <File>
               <FileName>Interrupt.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Interrupt.h</FilePath>
+              <FilePath>.\core\Interrupt.h</FilePath>
             </File>
             <File>
               <FileName>mutex.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\mutex.h</FilePath>
+              <FilePath>.\core\mutex.h</FilePath>
             </File>
             <File>
               <FileName>Serial.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Serial.h</FilePath>
+              <FilePath>.\core\Serial.h</FilePath>
             </File>
             <File>
               <FileName>SerialBase.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\SerialBase.h</FilePath>
+              <FilePath>.\core\SerialBase.h</FilePath>
             </File>
             <File>
               <FileName>T2_delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\T2_delay.h</FilePath>
+              <FilePath>.\core\T2_delay.h</FilePath>
             </File>
             <File>
               <FileName>TimeCounter0.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\TimeCounter0.h</FilePath>
+              <FilePath>.\core\TimeCounter0.h</FilePath>
             </File>
             <File>
               <FileName>Timer.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Timer.h</FilePath>
+              <FilePath>.\core\Timer.h</FilePath>
             </File>
             <File>
               <FileName>Timer2.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Timer2.h</FilePath>
+              <FilePath>.\core\Timer2.h</FilePath>
             </File>
             <File>
               <FileName>Timer2_PWM.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\core\inc\Timer2_PWM.h</FilePath>
+              <FilePath>.\core\Timer2_PWM.h</FilePath>
+            </File>
+            <File>
+              <FileName>DCMoto.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\DCMoto.h</FilePath>
+            </File>
+            <File>
+              <FileName>HC_SR04.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\HC_SR04.h</FilePath>
+            </File>
+            <File>
+              <FileName>Key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\Key.h</FilePath>
+            </File>
+            <File>
+              <FileName>Led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\Led.h</FilePath>
+            </File>
+            <File>
+              <FileName>MidiBuzzer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\MidiBuzzer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\Servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>StepperMotor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bsp\StepperMotor.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>DCMoto.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\DCMoto.c</FilePath>
+            </File>
+            <File>
+              <FileName>HC_SR04.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\HC_SR04.c</FilePath>
+            </File>
+            <File>
+              <FileName>Key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\Key.c</FilePath>
+            </File>
+            <File>
+              <FileName>Led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\Led.c</FilePath>
+            </File>
+            <File>
+              <FileName>MidiBuzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\MidiBuzzer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\Servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>StepperMotor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\StepperMotor.c</FilePath>
             </File>
           </Files>
         </Group>

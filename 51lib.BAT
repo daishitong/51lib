@@ -16,5 +16,12 @@ SET CPU_XTAL=0x01F78A40
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\TimeCounter0.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2_PWM.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\DCMoto.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\HC_SR04.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Key.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Led.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\MidiBuzzer.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Servo.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\StepperMotor.__i"
 "D:\Keil_v5\C51\BIN\LIB51.EXE" @"".\Objects\51lib.__b""
 E:\C.Code\git_project\51lib\51lib_release.bat
