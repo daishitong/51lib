@@ -1,0 +1,17 @@
+SET C51INC=D:\Keil_v5\C51\Inc;D:\Keil_v5\C51\Inc\Atmel
+SET C51LIB=D:\Keil_v5\C51\Lib
+SET CPU_TYPE=AT89S52
+SET CPU_VENDOR=Atmel
+SET UV2_TARGET=51lib
+SET CPU_XTAL=0x01F78A40
+"D:\Keil_v5\C51\BIN\A51.EXE" @".\Objects\STARTUP._ia"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\delay.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\ExternalInterrupt0.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Interrupt.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Serial.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\SerialBase.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\T2_Delay.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\TimeCounter0.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2_PWM.__i"
+"D:\Keil_v5\C51\BIN\LIB51.EXE" @"".\Objects\51lib.__b""

@@ -26,23 +26,3 @@ void delay_nus(short us)
   us /= CONST_COUNT_MICROSECOND;
   while((--us) >= 0);
 }
-
-void delay_5nop()
-{
-    
-}
-
-#include <intrins.h>
-void delay_100nop()
-{
-    char i;
-    for(i = 0;i < 10;i++)
-    {
-        _nop_();
-        _nop_();
-        _nop_();
-        _nop_();
-        _nop_();
-        _nop_();
-    }
-}

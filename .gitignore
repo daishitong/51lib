@@ -5,3 +5,4 @@
 /Objects/*.*
 /Objects/*
 !/Objects/*.lib
+*.uvgui.*
