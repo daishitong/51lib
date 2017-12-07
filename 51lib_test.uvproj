@@ -68,7 +68,7 @@
           <BeforeMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>E:\C.Code\git_project\51lib\51lib_build.BAT</UserProg1Name>
+            <UserProg1Name>E:\C.Code\git_project\51lib\51lib.BAT</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -311,7 +311,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\51lib_release\inc</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -376,7 +376,7 @@
             <File>
               <FileName>51lib.LIB</FileName>
               <FileType>4</FileType>
-              <FilePath>.\Objects\51lib.LIB</FilePath>
+              <FilePath>.\51lib_release\51lib.LIB</FilePath>
             </File>
           </Files>
         </Group>
@@ -386,7 +386,7 @@
             <File>
               <FileName>51lib.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\51lib.h</FilePath>
+              <FilePath>.\51lib_release\51lib.h</FilePath>
             </File>
           </Files>
         </Group>

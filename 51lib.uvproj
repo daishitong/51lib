@@ -311,7 +311,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\inc</IncludePath>
+              <IncludePath>.\core\inc</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -369,49 +369,59 @@
               <FilePath>.\STARTUP.A51</FilePath>
             </File>
             <File>
+              <FileName>Calculation.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\core\src\Calculation.c</FilePath>
+            </File>
+            <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\delay.c</FilePath>
+              <FilePath>.\core\src\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay_nop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\core\src\delay_nop.c</FilePath>
             </File>
             <File>
               <FileName>ExternalInterrupt0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\ExternalInterrupt0.c</FilePath>
+              <FilePath>.\core\src\ExternalInterrupt0.c</FilePath>
             </File>
             <File>
               <FileName>Interrupt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\Interrupt.c</FilePath>
+              <FilePath>.\core\src\Interrupt.c</FilePath>
             </File>
             <File>
               <FileName>Serial.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\Serial.c</FilePath>
+              <FilePath>.\core\src\Serial.c</FilePath>
             </File>
             <File>
               <FileName>SerialBase.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\SerialBase.c</FilePath>
+              <FilePath>.\core\src\SerialBase.c</FilePath>
             </File>
             <File>
               <FileName>T2_Delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\T2_Delay.c</FilePath>
+              <FilePath>.\core\src\T2_Delay.c</FilePath>
             </File>
             <File>
               <FileName>TimeCounter0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\TimeCounter0.c</FilePath>
+              <FilePath>.\core\src\TimeCounter0.c</FilePath>
             </File>
             <File>
               <FileName>Timer2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\Timer2.c</FilePath>
+              <FilePath>.\core\src\Timer2.c</FilePath>
             </File>
             <File>
               <FileName>Timer2_PWM.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\Timer2_PWM.c</FilePath>
+              <FilePath>.\core\src\Timer2_PWM.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -419,64 +429,74 @@
           <GroupName>Include Group</GroupName>
           <Files>
             <File>
+              <FileName>Calculation.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\core\inc\Calculation.h</FilePath>
+            </File>
+            <File>
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\delay.h</FilePath>
+              <FilePath>.\core\inc\delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay_nop.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\core\inc\delay_nop.h</FilePath>
             </File>
             <File>
               <FileName>ExternalInterrupt0.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\ExternalInterrupt0.h</FilePath>
+              <FilePath>.\core\inc\ExternalInterrupt0.h</FilePath>
             </File>
             <File>
               <FileName>Global.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Global.h</FilePath>
+              <FilePath>.\core\inc\Global.h</FilePath>
             </File>
             <File>
               <FileName>Interrupt.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Interrupt.h</FilePath>
+              <FilePath>.\core\inc\Interrupt.h</FilePath>
             </File>
             <File>
               <FileName>mutex.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\mutex.h</FilePath>
+              <FilePath>.\core\inc\mutex.h</FilePath>
             </File>
             <File>
               <FileName>Serial.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Serial.h</FilePath>
+              <FilePath>.\core\inc\Serial.h</FilePath>
             </File>
             <File>
               <FileName>SerialBase.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\SerialBase.h</FilePath>
+              <FilePath>.\core\inc\SerialBase.h</FilePath>
             </File>
             <File>
               <FileName>T2_delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\T2_delay.h</FilePath>
+              <FilePath>.\core\inc\T2_delay.h</FilePath>
             </File>
             <File>
               <FileName>TimeCounter0.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\TimeCounter0.h</FilePath>
+              <FilePath>.\core\inc\TimeCounter0.h</FilePath>
             </File>
             <File>
               <FileName>Timer.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Timer.h</FilePath>
+              <FilePath>.\core\inc\Timer.h</FilePath>
             </File>
             <File>
               <FileName>Timer2.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Timer2.h</FilePath>
+              <FilePath>.\core\inc\Timer2.h</FilePath>
             </File>
             <File>
               <FileName>Timer2_PWM.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\inc\Timer2_PWM.h</FilePath>
+              <FilePath>.\core\inc\Timer2_PWM.h</FilePath>
             </File>
           </Files>
         </Group>

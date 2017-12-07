@@ -1,4 +1,4 @@
-#include "Calcalation.h"
+#include "Calculation.h"
 
 void GetMinMax_short(short a,short b,short* min,short* max)
 {

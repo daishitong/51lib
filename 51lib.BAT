@@ -5,7 +5,9 @@ SET CPU_VENDOR=Atmel
 SET UV2_TARGET=51lib
 SET CPU_XTAL=0x01F78A40
 "D:\Keil_v5\C51\BIN\A51.EXE" @".\Objects\STARTUP._ia"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Calculation.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\delay.__i"
+"D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\delay_nop.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\ExternalInterrupt0.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Interrupt.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Serial.__i"
