@@ -18,4 +18,13 @@
 #include "core\Timer2.h"
 #include "core\Timer2_PWM.h"
  
+// bsp header files 
+#include "bsp\DCMoto.h"
+#include "bsp\HC_SR04.h"
+#include "bsp\Key.h"
+#include "bsp\Led.h"
+#include "bsp\MidiBuzzer.h"
+#include "bsp\Servo.h"
+#include "bsp\StepperMotor.h"
+ 
 #endif //__51LIB_H__  
