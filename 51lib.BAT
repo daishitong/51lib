@@ -17,3 +17,4 @@ SET CPU_XTAL=0x01F78A40
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2.__i"
 "D:\Keil_v5\C51\BIN\C51.EXE" @".\Objects\Timer2_PWM.__i"
 "D:\Keil_v5\C51\BIN\LIB51.EXE" @"".\Objects\51lib.__b""
+E:\C.Code\git_project\51lib\51lib_release.bat

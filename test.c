@@ -1,6 +1,6 @@
 /* site:https://github.com/daishitong/51lib */
 
-#include "51lib_release\51lib.h"
+#include "51lib.h"
 
 void main()
 {
