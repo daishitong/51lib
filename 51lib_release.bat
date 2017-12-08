@@ -1,10 +1,13 @@
 @echo off
 
 echo 51lib_release folder update
+cd /d %~dp0
 
 xcopy .\Objects\51lib.LIB .\51lib_release\ /D /Y
 xcopy .\core\*.h .\51lib_release\inc\core\ /D /Y
 xcopy .\bsp\*.h .\51lib_release\inc\bsp\ /D /Y
+xcopy .\LICENSE .\51lib_release\ /D /Y
+xcopy .\README.md .\51lib_release\ /D /Y
 
 setlocal
 set LIB_HEADER_FILE=.\51lib_release\inc\51lib.h
